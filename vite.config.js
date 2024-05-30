@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Portflio/",
   plugins: [react()],
+  base: "/Portflio/",
   css: {
     modules: {
-      localsConvention: 'camelCase'
-    }
-  }
-})
+      localsConvention: "camelCase",
+    },
+  },
+});
