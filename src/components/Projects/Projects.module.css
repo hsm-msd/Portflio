@@ -1,0 +1,42 @@
+.annoucement {
+  background-color: rgb(243, 246, 249);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  padding: 10%;
+  display: flex;
+}
+h1 {
+  font-size: calc(10px + 2vw); /* Adjust base size and ratio as needed */
+}
+.annoucement span {
+  width: 10px;
+  height: 10px;
+  margin: 0 1px;
+  background-color: #ffd957;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.annoucement span:nth-child(2) {
+  background-color: #57ffa0;
+  z-index: 1;
+  animation-delay: 0.4s;
+}
+
+.annoucement span:nth-child(3) {
+  background-color: #ff8b57;
+  z-index: 1;
+  animation-delay: 0.8s;
+}
+
+@keyframes dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+}
